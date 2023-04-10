@@ -10,10 +10,10 @@ const Navbar = () => {
     <div className='navbar-fixed'>
       <div className='navbar-container'>
       <p className='logo'>
-        <Link href='/'>Bumia Store</Link>
+        <Link href='/'>Bumia Stores</Link>
       </p>
       <button type='button' className='cart-icon' onClick={() => setShowCart(true)}>
-        <BsCart4/>
+        <BsCart4 style={{color:"white"}}/>
         <span className='cart-item-qty'>{cartItems.length}</span>
       </button>
      {showCart &&  <Cart/>}
