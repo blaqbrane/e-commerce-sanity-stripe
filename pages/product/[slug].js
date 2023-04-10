@@ -25,7 +25,7 @@ const ProductDetails= ({product,products}) => {
       setShowCart(true)
     }
   return (
-    <div style={{marginTop:"50px"}}>
+    <div style={{marginTop:"65px"}}>
       <div className='product-detail-container'>
         <div>
             <div className='image-container'>

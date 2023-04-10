@@ -32,7 +32,9 @@ width: 100%;
   left: 0;
   width: 100%;
   z-index: 10;
-  background-color: white;
+  
+  background: rgb(195,60,34);
+  background: radial-gradient(circle, rgba(195,60,34,1) 38%, rgba(251,194,71,1) 100%);
 }
 .navbar-container{
   display: flex;
@@ -77,7 +79,7 @@ width: 100%;
 .logo{
   color: gray;
   font-size: 24px;
-  color:#e6a415
+  color:white
 
 }
 .cart-icon{
@@ -113,37 +115,56 @@ width: 100%;
   margin-top: 20px;
   width: 100%;
 }
+/* .products-container{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 10px;
+  
+} */
 .product-card{
  cursor: pointer;
  transform: scale(1, 1);
  transition: transform 0.5s ease;
- color: #324d67;
+ box-shadow: 2px 3px 5px #dcdcdc;
+border-radius: 10px;
+width: 200px;
+padding: 10px;
 
 }
 .product-card:hover{
   transform: scale(1.1,1.1)
 }
 .product-image{
-  border-radius: 15px;
- background-color: #ebebeb;
+  border-radius: 10px;
+ background-color: rgb(250, 247, 247);
   transform: scale(1, 1);
   transition: transform 0.5s ease;
+ width: 100%;
+ object-fit: contain;
 }
 
 .product-name{
   font-weight: 500;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 .product-price{
   font-weight: 800;
   margin-top: 6px;
   color: black;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 10px;
 }
 
 .hero-banner-container{
   padding: 100px 40px;
-  background-color: #dcdcdc;
+  background-color: rgb(250, 247, 247);
   border-radius: 15px;
-  margin-top: 50px;
+  margin-top: 65px;
   position: relative;
   height: 500px;
   line-height: 0.9; 
@@ -156,7 +177,8 @@ width: 100%;
 .hero-banner-container button{
    border-radius: 15px;
   padding: 10px 16px;
-  background-color: #e6a415;
+  background: rgb(195,60,34);
+  background: radial-gradient(circle, rgba(195,60,34,1) 38%, rgba(251,194,71,1) 100%);
   color: white;
   border: none;
   margin-top: 40px;
@@ -224,7 +246,9 @@ text-align: end;
 }
 .footer-banner-container{
   padding: 100px 40px;
-  background-color: #e6a415;
+  /* background-color: #e6a415; */
+  background: rgb(195,60,34);
+background: radial-gradient(circle, rgba(195,60,34,1) 38%, rgba(251,194,71,1) 100%);
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -415,7 +439,8 @@ padding: 30px 65px;
   margin-top: 10px;
   margin-top: 40px;
   text-transform: uppercase;
-  background-color: #e6a415;
+  background: rgb(195,60,34);
+  background: radial-gradient(circle, rgba(195,60,34,1) 38%, rgba(251,194,71,1) 100%);
   color: #fff;
   cursor: pointer;
     transform: scale(1, 1);
@@ -435,7 +460,7 @@ padding: 30px 65px;
 
 .product-detail-image{
   border-radius: 15px;
-   background-color: #ebebeb;
+  background-color: rgb(250, 247, 247);
 
   width: 400px;
   height: 400px;
@@ -453,7 +478,7 @@ padding: 30px 65px;
 }
 .small-image{
   border-radius: 8px;
-  background-color: #ebebeb;
+  background-color: rgb(250, 247, 247);
   width: 70px;
   height: 70px;
   cursor: pointer;
@@ -503,6 +528,7 @@ padding: 30px 65px;
 .buttons .add-to-cart{
   padding: 10px 20px;
   border: 1px solid #e6a415 ;
+  border-radius: 4px;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
@@ -518,9 +544,10 @@ padding: 30px 65px;
 }
 .buttons .buy-now{
   width: 200px;
-
+  border-radius: 4px;
   padding: 10px 20px;
-  background-color: #e6a415;
+  background: rgb(195,60,34);
+background: radial-gradient(circle, rgba(195,60,34,1) 38%, rgba(251,194,71,1) 100%);
   color: white;
   border: none;
   margin-top: 40px;
@@ -536,6 +563,7 @@ padding: 30px 65px;
 .quantity-desc{
   border: 1px solid gray;
 padding: 6px;
+border-radius: 4px;
 }
 .quantity-desc span{
   font-size: 16px;
@@ -544,7 +572,7 @@ padding: 6px;
 }
 .quantity-desc .minus{
   border-right: 1px solid gray;
-  color: #e6a415;
+  color: red;
 }
 .quantity-desc .num{
   border-right: 1px solid gray;
@@ -646,7 +674,7 @@ margin-top: 160px;
     width: 77%;
     left:22%;
     top: 15%;
-    height: 70%
+    height: 60%
   }
   .banner-desc .left h3{
     font-weight: 900;
@@ -700,9 +728,17 @@ margin-top: 160px;
   .cart-heading{
     margin-top: 35px;
   }
-  .product-container{
+  /* edited */
+  .products-container{
     margin-top: 10px;
+    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
+  .product-card{
+    width: 100%;
+  }
+  
   .product{
     padding: 20px 5px;
 
