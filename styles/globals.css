@@ -32,10 +32,10 @@ width: 100%;
   left: 0;
   width: 100%;
   z-index: 10;
-  background: rgb(195,60,34);
-  background: linear-gradient(90deg, rgba(195,60,34,1) 38%, rgba(241,198,104,1) 100%);  
+  background: rgba(180, 178, 178, 0.644);
+  
   /* background: rgb(195,60,34);
-  background: radial-gradient(circle, rgba(195,60,34,1) 38%, rgba(251,194,71,1) 100%); */
+  background: linear-gradient(90deg, rgba(195,60,34,1) 38%, rgba(241,198,104,1) 100%);   */
 }
 .navbar-container{
   display: flex;
