@@ -123,16 +123,15 @@ width: 100%;
   row-gap: 20px;
   column-gap: 20px;
   padding: 10px;
-  
 } */
 .product-card{
  cursor: pointer;
  transform: scale(1, 1);
  transition: transform 0.5s ease;
  box-shadow: 2px 3px 5px #dcdcdc;
-border-radius: 10px;
-width: 200px;
-padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
 
 }
 .product-card:hover{
@@ -179,7 +178,7 @@ padding: 10px;
    border-radius: 15px;
   padding: 10px 16px;
   background: rgb(195,60,34);
-background: radial-gradient(circle, rgba(195,60,34,1) 38%, rgba(241,198,104,1) 100%);
+  background: radial-gradient(circle, rgba(195,60,34,1) 38%, rgba(241,198,104,1) 100%);
   color: white;
   border: none;
   margin-top: 40px;
@@ -247,9 +246,8 @@ text-align: end;
 }
 .footer-banner-container{
   padding: 100px 40px;
-  /* background-color: #e6a415; */
   background: rgb(195,60,34);
-background: radial-gradient(circle, rgba(195,60,34,1) 38%, rgba(251,194,71,1) 100%);
+  background: radial-gradient(circle, rgba(195,60,34,1) 38%, rgba(251,194,71,1) 100%);
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -272,6 +270,7 @@ background: radial-gradient(circle, rgba(195,60,34,1) 38%, rgba(251,194,71,1) 10
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+  z-index:10000 !important;
 }
 .banner-desc .left h3{
   font-weight: 900;

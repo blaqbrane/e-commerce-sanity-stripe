@@ -9,7 +9,7 @@ const Product = ({product:{image,name, slug, price}}) => {
           <div className='product-card'>
             <img src={urlFor(image && image[0])} alt="" width={250} height={250} className='product-image'/>
             <p className='product-name'>
-                {name}
+                {`${name.substring(0,18)} ...`}
             </p>
             <p className='product-price'>
                 ${price}
